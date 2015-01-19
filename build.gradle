@@ -1,0 +1,34 @@
+allprojects
+{
+}
+
+subprojects
+{
+    apply plugin: "java"
+
+    repositories
+    {
+        mavenCentral()
+    }
+}
+
+project(':common')
+{
+}
+
+project('spring')
+{
+    dependencies
+    {
+        compile project(':common')
+    }
+}
+
+project('swing')
+{
+    dependencies
+    {
+        compile project(':common')
+    }
+}
+
