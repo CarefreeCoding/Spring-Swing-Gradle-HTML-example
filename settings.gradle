@@ -1,1 +1,1 @@
-include ":common",":spring",":swing"
+include ":common",":spring",":swingMVC",":swing"
