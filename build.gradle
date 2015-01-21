@@ -13,17 +13,3 @@ subprojects {
         mavenLocal()
     }
 }
-
-project('spring') {
-    dependencies {
-        compile project(':common')
-    }
-}
-
-project('swing') {
-    dependencies
-            {
-                compile project(':common')
-            }
-}
-
