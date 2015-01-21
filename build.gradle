@@ -14,9 +14,6 @@ subprojects {
     }
 }
 
-project(':common') {
-}
-
 project('spring') {
     dependencies {
         compile project(':common')
