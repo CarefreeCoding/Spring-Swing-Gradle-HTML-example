@@ -1,3 +1,5 @@
 dependencies {
     compile project(':common'), project(':mvc'), project(':utils')
+
+    compile 'com.miglayout:miglayout-swing:4.2'
 }
