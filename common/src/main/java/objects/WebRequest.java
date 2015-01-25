@@ -2,6 +2,7 @@ package objects;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -25,6 +26,15 @@ public class WebRequest
 	public void setLink(String link)
 	{
 		this.link = link;
+	}
+
+	public void addParam(String param)
+	{
+		if (param == null || param.trim().isEmpty())
+		{
+			return;
+		}
+		this.link += "/" + param.trim();
 	}
 
 	public void addParam(String key, String value)
