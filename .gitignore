@@ -69,3 +69,4 @@ $RECYCLE.BIN/
 gradlew*
 gradle/*
 build/*
+*/build/*
