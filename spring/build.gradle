@@ -1,3 +1,14 @@
+apply plugin: 'war'
+apply plugin: 'jetty'
+
 dependencies {
     compile project(':common')
+
+    compile 'org.springframework:spring-core:4.1.2.RELEASE',
+            // used to make controllers
+            'org.springframework:spring-context:4.1.2.RELEASE',
+            // for request mapping to work
+            'org.springframework:spring-web:4.1.2.RELEASE',
+            // for jsp to work
+            'org.springframework:spring-webmvc:4.1.2.RELEASE'
 }
